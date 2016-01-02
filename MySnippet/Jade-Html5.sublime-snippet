@@ -1,0 +1,49 @@
+<snippet>
+  <content><![CDATA[
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf8")
+    title ${1:this BOM's Landing page}
+    meta(name="description" content="")
+    meta(name="author" content="BOM Nguyen")
+    link(rel="stylesheet" href="style/css/style.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,100")
+    |<!--[if lt IE 9]>
+    script(src="")
+    |<![endif]-->
+  body
+${2:    .wrapper
+      .header
+        .container.clearfix
+          logo
+            a.top-logo(href="#")
+              img(src="" alt="BOM")
+          nav.top-nav
+            a(href="#section-01") Section 1
+            a(href="#section-02") Section 2
+            a(href="#section-03") Section 3
+            a(href="#section-04") Section 4
+            a(href="#section-05") Section 5
+      .banner
+        ul.bxslider
+          li
+          li
+          li
+      .contents
+        .container
+          section.block-01
+          section.block-02
+          section.block-03
+      .footer
+        .container
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="")
+  script(src="")
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jade5</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
